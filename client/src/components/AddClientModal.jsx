@@ -30,14 +30,22 @@ export default function AddClientModal() {
 
   const onSubmit = (e) => {
     e.preventDefault();
+
+    if (name === "" || phone === "" || email === "") {
+      return alert("Please fill in all form inputs");
+    }
+
     addClient();
+    setName("");
+    setEmail("");
+    setPhone("");
   };
 
   return (
     <>
       <button
         type='button'
-        className='btn btn-seconday'
+        className='btn btn-secondary'
         data-bs-toggle='modal'
         data-bs-target='#addClientModal'
       >
