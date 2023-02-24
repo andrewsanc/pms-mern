@@ -6,7 +6,7 @@ export default function Header() {
       <div className='container'>
         <a className='navbar-brand' href='/'>
           <div className='d-flex'>
-            <img src={logo} className='mr-2' />
+            <img src={logo} className='mr-2' alt='Graphql Logo' />
             <div>Project Management</div>
           </div>
         </a>
